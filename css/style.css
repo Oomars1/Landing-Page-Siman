@@ -1,0 +1,50 @@
+/* Estilos generales */
+* {
+  font-family: ClanOT, Arial;
+}
+
+.custom-navbar {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  background-color: #a83338;
+}
+
+.navbar-brand {
+  font-size: x-large !important;
+  margin-bottom: 0 !important;
+}
+
+.busqueda {
+  background-color: #4a1619 !important;
+  border: 1px solid #4a1619 !important;
+  border-radius: 15px !important;
+}
+
+.busqueda::placeholder {
+  color: #979888 !important;
+  opacity: 1;
+}
+
+/* Contenedor del buscador */
+.tamanio {
+  width: 100%;
+  max-width: 760px;
+  margin-left: 5rem;
+  margin-right: auto;
+}
+
+/* QUITA esto: rompe responsive */
+/* .tamanio input {
+    margin-right: 29rem;
+  } */
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+  .tamanio {
+    max-width: 180px;
+    width: 100%;
+    margin: 0;
+  }
+}
