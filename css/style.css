@@ -20,6 +20,7 @@
   background-color: #4a1619 !important;
   border: 1px solid #4a1619 !important;
   border-radius: 15px !important;
+  
 }
 
 .busqueda::placeholder {
@@ -31,20 +32,88 @@
 .tamanio {
   width: 100%;
   max-width: 760px;
-  margin-left: 5rem;
+  margin-left: 0;
   margin-right: auto;
 }
 
-/* QUITA esto: rompe responsive */
-/* .tamanio input {
-    margin-right: 29rem;
-  } */
+hr {
+  border: 1px solid #4a1619 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
-/* Responsive tweaks */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+  
+}
+
+
+
 @media (max-width: 767px) {
   .tamanio {
-    max-width: 180px;
+    max-width: 205px;
     width: 100%;
     margin: 0;
+    height: 30px;
+    margin-top: 0;
+    margin-left: 0;
   }
 }
+@media (max-width: 350px) {
+    .tamanio {
+      max-width: 185px;
+      width: 100%;
+      margin: 0;
+      height: 30px;
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+
+@media (max-width: 400px) {
+    .navbar .nav-link i.bi-cart {
+      font-size: 1.5rem;
+    }
+
+    .navbar .navbar-toggler {
+      margin-right: 0.5rem;
+    }
+
+    .navbar .input-group.busqueda {
+      flex-wrap: nowrap;
+      overflow: hidden;
+    }
+
+    .navbar .tamanio {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .navbar .nav-link {
+      font-size: 0.9rem !important; /* más pequeño */
+    }
+
+    .navbar .bi {
+      font-size: 1rem; /* íconos más pequeños */
+    }
+
+    .navbar .btn i {
+      font-size: 1rem !important;
+    }
+
+    .navbar-nav {
+      flex-wrap: wrap; /* permite que se acomoden si no caben */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .navbar .nav-link {
+      font-size: 0.5rem;
+    }
+   
+  }
