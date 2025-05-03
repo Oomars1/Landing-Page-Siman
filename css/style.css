@@ -22,6 +22,8 @@
     margin-bottom: 0 !important;
 }
 
+
+
 .busqueda {
     background-color: #4a1619 !important;
     border: 1px solid #4a1619 !important;
@@ -162,9 +164,9 @@ img {
     margin-left: 1rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px ) {
     .tamanio {
-        max-width: 205px;
+        max-width: 230px;
         width: 100%;
         margin: 0;
         height: 30px;
@@ -182,11 +184,11 @@ img {
         border-radius: 20px;
     }
 
-    .carrousel img {
+    .carImage img {
         aspect-ratio: 1 / 1;
         max-height: 360px;
-        border-radius: 20px;
-
+        border-radius: 30px;
+        padding: 1rem;
     }
 
     main p {
@@ -222,6 +224,14 @@ img {
 
     .navbar .tamanio {
         width: 100%;
+    }
+    .tamanio{
+        max-width: 190px;
+        width: 100%;
+        margin: 0;
+        height: 30px;
+        margin-top: 0;
+        margin-left: 0;
     }
 }
 
