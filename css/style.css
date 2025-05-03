@@ -130,14 +130,20 @@ img {
 }
 
 .btnCompra {
-    padding: 0.5rem 1rem;
-    background-color: #a83338;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-bottom: 1rem;
+  display: inline-block;
+  background-color: #a83338;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
+
+.btnCompra:hover {
+  background-color: #a83338;
+}
+
 
 .precio {
     margin: 0.5rem 0;
@@ -195,6 +201,30 @@ img {
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
+    .tarjetaProducto {
+        margin: 10px !important; /* margen uniforme */
+        aspect-ratio: 1 / 1.1;    /* forma más cuadrada */
+        max-width: none;
+        width: 95%;
+      }
+    
+      .contenido {
+        height: auto;
+        padding: 10px;
+        margin: 0;
+      }
+    
+      .tarjetaProducto img {
+        height: 140px;
+        object-fit: contain;
+        border-radius: 10px;
+      }
+    
+      .btnCompra {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+      }
 }
 
 @media (max-width: 350px) {
