@@ -1,0 +1,37 @@
+📌 Funcionalidad de los Botones
+Esta aplicación web incluye varios botones interactivos que permiten al usuario navegar hacia secciones clave para realizar acciones comunes. A continuación se detalla la funcionalidad de cada uno:
+
+🛍️ Botón: Lo quiero!
+Descripción: Este botón permite al usuario iniciar de forma inmediata el proceso de compra del producto visualizado.
+
+Acción: Redirige a la página de compra rápida del producto actual.
+
+Ruta: https://almacenesiman.netlify.app/article
+
+👤 Botón: Mi cuenta
+Descripción: Permite al usuario acceder a su perfil personal, desde donde puede consultar o editar su información personal, dirección, y preferencias.
+
+Acción: Redirige a la página de perfil de usuario .
+
+Ruta: https://almacenesiman.netlify.app/profile
+
+📦 Botón: Mis Pedidos
+Descripción: Muestra el historial de compras realizadas por el usuario, junto con el estado actual de cada pedido.
+
+Acción: Redirige a la sección de historial de pedidos del usuario.
+
+Ruta: https://almacenesiman.netlify.app/pedidos
+
+🎁 Botón: Ver regalos, Comprar ahora
+Descripción: Muestra la pagina con multiples productos
+
+Acción: Redirige a la página de regalos o promociones especiales .
+
+Ruta: https://almacenesiman.netlify.app/productos
+
+🏠 Logo de la Compañía
+Descripción: El logo ubicado en la parte superior del sitio web actúa como un botón de acceso rápido al inicio.
+
+Acción: Al hacer clic en el logo, el usuario es redirigido a la página principal del sitio.
+
+Ruta: https://almacenesiman.netlify.app/

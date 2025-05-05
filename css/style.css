@@ -72,6 +72,19 @@ main p {
     margin-right: 1rem;
 }
 
+footer p{
+    text-align: center;
+}
+
+.tarjetaProducto img {
+    max-width: 200px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
 /*card */
 .carrousel {
 
@@ -108,21 +121,27 @@ main p {
     align-items: center;
     text-align: center;
     margin-left: 0;
-    margin-right: 10p0x;
+    margin-right: 10px;
     flex: 0 0 250px;
     max-width: 250px;
 }
 
-.contenido {
+.texto {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* permite que crezca y empuje el botón abajo */
+  }
+
+  .contenido {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0rem;
-    height: 340px;
+    height: 340px; /* o min-height si quieres flexibilidad */
     border: 2px solid #a83338;
     border-radius: 20px;
     margin-left: 2rem;
-}
+  }
 
 img {
     max-width: 100%;
@@ -130,47 +149,56 @@ img {
 }
 
 .btnCompra {
-  display: inline-block;
-  background-color: #a83338;
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
+    display: inline-block;
+    background-color: #a83338; /* color original */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  
+    margin-top: auto;              /* empuja hacia abajo dentro del contenedor flex */
+    align-self: center;            /* centra horizontalmente el botón */
+  }
 
 .btnCompra:hover {
   background-color: #a83338;
 }
 
+.fijoAbajo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: auto;
+  }
 
 .precio {
-    margin: 0.5rem 0;
+    margin-top: auto;
+    text-align: left;
     font-size: 1rem;
-}
-
-.precioOriginal {
+  }
+  
+  .precioOriginal {
     text-decoration: line-through;
     color: #888;
     margin-right: 0.5rem;
-    margin-left: 1rem;
-}
-
-.descuento {
+  }
+  
+  .descuento {
     color: #e53935;
     font-weight: bold;
-}
-
-.precioFinal {
+  }
+  
+  .precioFinal {
     display: block;
     font-size: 1.2rem;
     font-weight: bold;
     color: #2e7d32;
-    margin-left: 1rem;
-}
+  }
+  
 
-@media (max-width: 767px ) {
+@media (max-width: 780px ) {
     .tamanio {
         max-width: 230px;
         width: 100%;
@@ -270,6 +298,7 @@ img {
         font-size: 0.9rem !important;
         /* más pequeño */
     }
+  
 
     .navbar .bi {
         font-size: 1rem;
@@ -292,3 +321,43 @@ img {
     }
 
 }
+
+@media (min-width: 780px) and (max-width: 1199px) {
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 1rem;
+        width: 170px;
+        border: 2px solid #a83338;
+        border-radius: 20px;
+        box-sizing: border-box;
+        min-height: 420px; /* puedes ajustar */
+      }
+      
+      .tarjetaProducto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        text-align: center;
+        flex: 0 0 250px;
+        max-width: 250px;
+        height: 100%; /* ← importante para que herede bien */
+        margin-left: 0;
+        margin-right: 10px;
+      }
+      
+    .texto {
+      flex-grow: 1;
+    }
+  
+    .fijoAbajo {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+  }
